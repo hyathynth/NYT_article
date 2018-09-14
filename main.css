@@ -1,0 +1,545 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/*HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start css styling*/
+
+header div {
+    display: inline-block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;  
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+header button {
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    background-color: #6288a5;
+    border: 1px solid #326891;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    height: 30px;
+    margin: 10px;
+    float: right;
+}
+
+.header-left, .header-right  {
+    width: 20%;
+}
+
+.header-title {
+    width: 60%;
+}
+
+.header-name {
+    margin-left: 15px;
+    font-size: 14.25px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+}
+
+.header-bar img {
+    margin: 10px 15px;
+}
+
+.main header {
+    display: block;
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: left;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    color: #121212;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.71rem;
+}
+
+.main figure {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main figure figcaption {
+    width: 60%;
+    padding-top: 5px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#caption1 {
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    color: #666;
+    font-size: 14px;
+}
+
+#caption2 {
+    color: #999;
+    font-size: 12px;
+}
+
+.main article p {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 18px;
+    line-height: 1.47rem;
+    margin-top: 1rem;
+}
+
+.main article time {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 500;
+    color: #666;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.main article img {
+    margin-top: 0;
+    width: 40%;
+}
+
+.main article figure .inflation-fig1 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -430px;
+    
+}
+
+.main article figure .inflation-fig2 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    
+}
+.main article figure div figcaption {
+    display: inline-block;
+    width: 140px;
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    vertical-align: top;
+}
+
+strong {
+    font-weight: 600;
+}
+
+#author1 {
+    margin-top: 40px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+#article-inflation1 {
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 30px;
+    font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+}
+
+#article-inflation2 {
+    font-size: 12px;
+    font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
+    color: #666;
+    line-height: 1rem;
+    margin-top: 5px;
+}
+
+iframe {
+    display: block;
+    width: 40%;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#video-caption, #caption3 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 40%;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    color: #666;
+    font-size: 13px;
+    line-height: 1rem;
+}
+
+#space {
+    height: 40px;
+}
+
+#caption4 {
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-size: 11px;
+    line-height: 0.9rem;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #999;
+}
+
+.bottom {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid black;
+    width: 80%;
+}
+
+.bottom .left {
+    display: inline-block;
+    width: 55%;
+    float: left;
+}
+
+.bottom .right {
+    display: inline-block;
+    width: 45%;
+    float: right;
+}
+
+#sign-up {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+}
+
+#sign-up-detail {
+    color: rgb(102, 102, 102);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.86rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1625rem;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.bottom {
+    height: 120px;
+}
+.bottom form {
+    padding-top:20px;
+}
+
+.bottom form input {
+    height: 30px;
+    width: 80%;
+}
+
+.bottom form button {
+    height: 36px;
+    width: 18%;
+    background-color: rgb(50, 104, 145);
+    color: rgb(255, 255, 255);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+}
+
+.bottom p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    display: flex;
+}
+
+.bottom ul li {
+    display: block;
+    padding-right: 10px;
+    float: left;
+    font-size: 9px;
+    color: rgb(102, 102, 102);
+}
+
+.more {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 20px;
+    
+}
+
+.more-left {
+    border-top: 2px solid black;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.more-title {
+    margin-top: 20px;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.more-news {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.more-news img {
+    width: 280px;
+}
+
+.more-news figcaption {
+    width: 280px;
+    text-align: right;
+    color: rgb(153, 153, 153);
+    font-size: 0.6em;
+    line-height: 1.23em;
+}
+
+.more-news p {
+    width: 280px;
+    font-size: 16px;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+.more-news time {
+    color: rgb(153, 153, 153);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+aside div {
+    margin-left: 20px;
+    border-top: 2px solid black;
+}
+
+aside li {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 15px;
+    padding-top: 15px;
+    line-height: 1.25rem;
+    font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+aside li a {
+    text-decoration: none;
+    color: #121212;
+}
+
+aside li a:hover {
+    color: #666;
+}
+
+nav {
+    clear: both;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-top: 4px double lightgray;
+}
+
+nav header {
+    display: block;
+}
+
+#to-home {
+    text-align: right;
+    width: 100%;
+    height: 12px;
+    border: none;
+    color: rgb(98, 136, 165);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+}
+
+.nav {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.nav h3 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nav li {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+
+.nav .subs {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 25px;
+    line-height: 15px;
+    padding-bottom: 0px;
+}
+
+.nav .other-links {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 21px;
+}
+
+.divider-left {
+    padding-left: 20px;
+    border-left: 1px solid lightgray;
+}
+
+.divider1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.divider2 {
+    padding-top: 10px;
+}
+
+footer {
+    border-top: 1px solid lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+footer div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div li {
+    display: inline-block;
+    color: rgb(153, 153, 153);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 11px;
+    padding: 10px 10px;
+}
